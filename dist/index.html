@@ -9,10 +9,19 @@
 <body>
     <ui-view></ui-view>
     
+  
+ 
+    <!-- Angular -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<!--        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>-->
+
+    <!-- AngularFire -->
+        <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
+    
     <!-- firebase -->
         <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
-        <script>
- // Initialize Firebase
+        
+        <script>// Initialize Firebase
         var config = {
         apiKey: "AIzaSyCz7Wi9T1gslvrEMojFDj9_O5MFoZR3kjI",
         authDomain: "blocchat-783b2.firebaseapp.com",
@@ -23,12 +32,6 @@
         firebase.initializeApp(config);
         </script>
 
-    <!-- Angular -->
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
-
-    <!-- AngularFire -->
-        <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
     
     <!-- scripts -->
     <script src="/scripts/app.js"></script>

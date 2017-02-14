@@ -5,5 +5,5 @@
     
     angular
         .module('blocChat')
-        .config('HomeCtrl', ['$scope', 'Room', HomeCtrl]);
+        .controller('HomeCtrl', ['$scope', 'Room', HomeCtrl]);
 })();

@@ -7,9 +7,30 @@
 
 .side-bar {
     font-family: 'Helvetica', sans-serif;
+    color: white;
     background-color: #62fcb2;
-    padding: 15px;
-    width: 190px;
-    height: 1000px;
-    text-align: right;
+    padding-left: 70px;
+    padding-top: 40px;
+    width: 300px;
+    height: 1080px;
+    text-align: left;
 }
+h1 {
+    color: white;
+    font-family: 'Pacifico', 'Helvetica', sans-serif;
+    text-shadow: -1px 0 darkgreen, 0 1px darkgreen, 1px 0 darkgreen, 0 -1px darkgreen;
+}
+/*
+
+    @media screen and (min-height: 500px) {
+        .side-bar {
+        height: 420px;
+         }
+    }
+
+    @media screen and (min-height: 800px) {
+       .side-bar {
+       height: 100%;
+       }
+    }
+*/

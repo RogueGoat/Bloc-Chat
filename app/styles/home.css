@@ -4,9 +4,8 @@
     box-sizing: border-box;
 }
 
-
 .side-bar {
-    font-family: 'Andale Mono', sans-serif;
+    font-family: 'Andale-Mono', sans-serif;
     color: white;
     background-color: #62fcb2;
     padding-left: 40px;
@@ -14,18 +13,32 @@
     width: 420px;
     height: 1080px;
     text-align: left;
+    display: inline-block;
 }
-.title-button .button{
+.add {
     float: right;
+    margin-right: 20px;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+ 
+.clearfix:after {
+    clear: both;
 }
 
 h1 {
     color: white;
-    font-family: 'Pacifico', 'Andale Mono', sans-serif;
+    font-family: 'Pacifico', 'Andale-Mono', sans-serif;
     text-shadow: -1px 0 darkgreen, 0 1px darkgreen, 1px 0 darkgreen, 0 -1px darkgreen;
 }
 
-body {
+.chat-rooms {
+    margin: 20px;
+    color: darkgreen;
     
 }
 
@@ -38,11 +51,6 @@ button {
     text-align: center;
     font-size: 20px;
     font-weight: bold;
-/*
-    float: right;
-    display: inline-block;
-*/
-/*    margin: 0 0 10px 10px;*/
 }
 
  button:hover {

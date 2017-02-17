@@ -1,10 +1,13 @@
 <main class = "side-bar">
+    <section class = "clearfix">
     <div class = "title-button">
+        <button class = "add">Add Chatter!</button>
         <h1>Chitter Chat</h1>
-        <button>Add Chatter!</button>
+        
     </div>
-    <section class ="chat-rooms">
-    <div ng-repeat = "room in roomList">
+    </section>
+    <section class = "clearfix">
+    <div ng-repeat = "room in roomList" class ="chat-rooms" >
         <p>{{ room.$value }}</p>
         </div>
     </section>

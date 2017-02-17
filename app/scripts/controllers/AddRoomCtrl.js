@@ -1,6 +1,8 @@
 (function() {
     function AddRoomCtrl($scope, Room, $uibModalInstance) {
-        
+        $scope.addRoom = function(){
+            
+        };
  
         
 }

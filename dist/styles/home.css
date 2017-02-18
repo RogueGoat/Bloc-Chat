@@ -18,34 +18,33 @@ html{
     text-align: left;
     display: inline-block;
 }
+
+.title-button{
+    margin-bottom: 50px;
+}
+
 .add {
     float: right;
     margin-right: 30px;
     font-family: 'Josefin Sans', sans-serif; 
 }
 
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
- 
-.clearfix:after {
-    clear: both;
-}
-
 h1 {
     color: white;
-    font-family: 'Pacifico', 'Andale-Mono', sans-serif;
-    text-shadow: -1px 0 darkgreen, 0 1px darkgreen, 1px 0 darkgreen, 0 -1px darkgreen;
+    font-family: 'Pacifico', sans-serif;
+    text-shadow: -1px 0 darkgreen, 0 1px darkgreen, 1px 0 lightpink, 0 -1px lightpink;
 }
 
 .chat-rooms {
-    margin: 20px;
+    margin-top: 30px;
     color: darkgreen;
     font-size: 20px;
     font-family: 'Josefin Sans', sans-serif;
     
+}
+
+.delete {
+    float: right;
 }
 
 button {

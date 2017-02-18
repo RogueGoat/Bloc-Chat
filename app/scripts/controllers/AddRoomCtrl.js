@@ -1,9 +1,16 @@
 (function() {
     function AddRoomCtrl($scope, Room, $uibModalInstance) {
-        $scope.addRoom = function(){
-            
-        };
- 
+        $scope.addRoom = function(newRoom){
+            if (newRoom !== undefined){
+                Room.makeRoom(newRoom);
+            } else if (newRoom === undefined){
+               $uibModalInstance.close(); 
+            }
+         }
+        
+         $scope.deleteRoom = function(){
+             $uibModalInstance.close();
+         }
         
 }
     

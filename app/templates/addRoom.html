@@ -1,0 +1,12 @@
+<main class = "form-box">
+<div class = "delete">
+<button ng-click="deleteRoom()" class = "delete-room">x</button>
+</div>
+<div class = "add-room">
+    <h3 class = "chat-title">Add Chat</h3>
+    <form ng-submit="addRoom()">
+    <input ng-modal="room" placeholder="Create a Chatroom!" type="text">
+    <button class = "submit-room">Submit</button>
+    </form>
+</div>
+</main>

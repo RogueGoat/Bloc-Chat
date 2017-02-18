@@ -1,14 +1,17 @@
 (function() {
     function AddRoomCtrl($scope, Room, $uibModalInstance) {
+        $scope.room = null;
         $scope.addRoom = function(newRoom){
             if (newRoom !== undefined){
                 Room.makeRoom(newRoom);
+                $uibModalInstance.close();
+
             } else if (newRoom === undefined){
                $uibModalInstance.close(); 
             }
          }
         
-         $scope.deleteRoom = function(){
+         $scope.nevermind = function(){
              $uibModalInstance.close();
          }
         
@@ -18,12 +21,3 @@
         .module('blocChat')
         .controller('AddRoomCtrl', ['$scope', 'Room', '$uibModalInstance', AddRoomCtrl]);
 })();
-
-
-
-
-//        rooms.$add({}).then(function(ref){
-//        var addChat = ref.key;
-//        alert("Add a Chatroom?" + addChat);
-//        list.$indexFor(addChat);
-//    }); 

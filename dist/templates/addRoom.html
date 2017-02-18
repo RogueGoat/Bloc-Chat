@@ -1,12 +1,16 @@
 <main class = "form-box">
-<div class = "delete">
-<button ng-click="deleteRoom()" class = "delete-room">x</button>
-</div>
+
 <div class = "add-room">
     <h3 class = "chat-title">Add Chat</h3>
-    <form ng-submit="addRoom()">
-    <input ng-modal="room" placeholder="Create a Chatroom!" type="text">
-    <button class = "submit-room">Submit</button>
+    <form ng-submit="addRoom(newRoom)">
+    <input ng-model="newRoom" placeholder="Create a Chatroom!" type="text">
+
+        <p>
+            <button class = "submit-room">Submit</button>
+        </p>
     </form>
+<div class = "delete">
+<button ng-click="nevermind()" class = "delete-room">Nevermind!</button>
+</div>
 </div>
 </main>

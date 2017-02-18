@@ -1,8 +1,22 @@
 <main class = "side-bar">
-    <h1>Bloc Chat</h1>
-    <section class ="chat-rooms">
-    <div ng-repeat = "room in roomList">
+    <section>
+    <div class = "title-button">
+        <button ng-click="addChatRoom()" class= "add">Add Chatter!</button>
+        <h1>Chitter Chat</h1>
+        
+    </div>
+    </section>
+    <section>
+    <div ng-repeat = "room in roomList" class ="chat-rooms" >
         <p>{{ room.$value }}</p>
         </div>
+    </section>
+    
+    
+    <section>
+    <div class = "design">
+<!--        working title ; plan to push image to bottom/right of side-bar -->
+<!--    <img src = "/assets/images/bglines.gif" class = "desgin-type">-->
+    </div>
     </section>
 </main>

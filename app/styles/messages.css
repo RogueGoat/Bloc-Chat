@@ -43,6 +43,8 @@ h5 {
 }
 .rooms-title {
     font-family: 'Pacifico', sans-serif;
+    color: lightpink;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 lightpink, 0 -1px lightpink;
     float: right;
 }
 table {

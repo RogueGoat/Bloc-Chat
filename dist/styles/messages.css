@@ -1,0 +1,64 @@
+h1 {
+    display: block;
+    font-size: 4em;
+    font-weight: bold;
+}
+h2 {
+    display: block;
+    font-size: 3em;
+    font-weight: bold;
+}
+h3 {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+}
+h4 {
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+h5 {
+    display: block;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/*CHAT ROOMS*/
+
+.rooms {
+    position: relative;
+    float: left;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.current-room {
+     margin-top: 40px;
+     margin-left: 470px;
+}
+
+.current-messages {
+    margin-top: 150px;
+    margin-left: 470px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.rooms-title {
+    font-family: 'Pacifico', sans-serif;
+    color: lightpink;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 lightpink, 0 -1px lightpink;
+    float: right;
+}
+table {
+    width: 100vh;
+    font-size: 16px;
+}
+tr {
+    padding: 40px;
+}
+.name {
+    float: left;
+    font-weight: bold;
+}
+.time {
+    float: right;
+    font-weight: bold;
+}

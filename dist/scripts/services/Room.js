@@ -6,7 +6,10 @@
     return {
         all: rooms,
         makeRoom: function(newRoom){
-        return rooms.$add(newRoom);
+            return rooms.$add({
+                name: newRoom,
+                createdAt: (new Date()).getTime()
+            });
         }
     };
   }

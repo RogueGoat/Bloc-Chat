@@ -43,6 +43,16 @@ html {
     font-family: 'Josefin Sans', sans-serif;
     
 }
+.date {
+    background-color: darkgreen;
+    color: lightgreen;
+    text-align: center;
+    border-radius: 4px;
+    width: 100px;
+    font-size: 10px;
+    font-weight: bold;
+    margin-left: 15px;
+}
 
 .delete {
     float: right;

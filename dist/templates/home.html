@@ -1,8 +1,8 @@
 <body>
 <section class = "rooms">
-    <div class = "current-room"><h2 class = "rooms-title">room - placeholder</h1>
+    <div class = "current-room"><h2 class = "rooms-title">placeholder</h2>
     </div>
-    <div class = "current-messages"><h3>messages</h2>
+    <div class = "current-messages"><h3>messages</h3>
         <table>
             <p>
             <tr>
@@ -34,8 +34,9 @@
         <h1 class ="chitter">Chitter</h1>
         
     </div>
-    <div ng-repeat = "room in roomList" class ="chat-rooms" >
-        <p>{{ room.$value }}</p>
+    <div ng-repeat = "room in roomList" class ="chat-rooms">
+        <p>{{ room.name }}</p>
+        <p>{{ room.createdAt | date }}</p>
     </div>
     
     

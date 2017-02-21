@@ -43,6 +43,9 @@ html {
     font-family: 'Josefin Sans', sans-serif;
     
 }
+.date {
+    font-size: 10px;
+}
 
 .delete {
     float: right;

@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-html{
+html {
     height: 100vh;
 }
 .side-bar {
@@ -12,21 +12,13 @@ html{
     color: white;
     background-color: #62fcb2;
     padding-left: 40px;
-    padding-top: 40px;
+    padding-top: 30px;
     width: 420px;
     min-height: 100vh;
     text-align: left;
-    display: inline-block;
+    float: left;
+    position: absolute;
 }
-body {
-/*
-    height: 100%;
-    width: 100%;
-    margin-right: 430px;
-    display: inline-block;
-*/
-}
-
 .title-button{
     margin-bottom: 50px;
 }
@@ -34,10 +26,11 @@ body {
 .add {
     float: right;
     margin-right: 30px;
+    margin-top: 15px;
     font-family: 'Josefin Sans', sans-serif; 
 }
 
-h1 {
+.chitter {
     color: white;
     font-family: 'Pacifico', sans-serif;
     text-shadow: -1px 0 darkgreen, 0 1px darkgreen, 1px 0 lightpink, 0 -1px lightpink;
@@ -77,9 +70,11 @@ button {
      background-color: lightpink;
  }
 
+
 .web-design {
     /* working on it */
 }
+
 /*
 
     @media screen and (min-height: 500px) {

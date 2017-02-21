@@ -1,28 +1,50 @@
-<main class = "side-bar">
-    <section>
+<body>
+<section class = "rooms">
+    <div class = "current-room"><h2 class = "rooms-title">room - placeholder</h1>
+    </div>
+    <div class = "current-messages"><h3>messages</h2>
+        <table>
+            <p>
+            <tr>
+                <th class = "name">test</th>
+                <th>test</th>
+                <th class = "time">test</th>
+            </tr>
+            </p>
+            <p>
+            <tr>
+                <th class = "name">test</th>
+                <th>test</th>
+                <th class = "time">test</th>
+            </tr>
+            </p>
+            <p>
+            <tr>
+                <th class = "name">test</th>
+                <th>test</th>
+                <th class = "time">test</th>
+            </tr>
+            </p>
+        </table>
+    </div>
+</section>
+<section class = "side-bar">
     <div class = "title-button">
         <button ng-click="addChatRoom()" class= "add">Add Chatter!</button>
-        <h1>Chitter Chat</h1>
+        <h1 class ="chitter">Chitter</h1>
         
     </div>
-    </section>
-    <section>
     <div ng-repeat = "room in roomList" class ="chat-rooms" >
         <p>{{ room.$value }}</p>
-        </div>
-    </section>
+    </div>
     
     
-    <section>
-    <div class = "design">
+<!--    <div class = "design">-->
 <!--        working title ; plan to push image to bottom/right of side-bar -->
 <!--    <img src = "/assets/images/bglines.gif" class = "desgin-type" class = "web-design">-->
-    </div>
-    </section>
-</main>
-<body layout = "column">
-    <div><h1>room - placeholder</h1>
-    </div>
-    <div>messages
-    </div>
+<!--    </div>-->
+    
+</section>
 </body>
+
+

@@ -28,6 +28,6 @@ html {
     margin-bottom: 30px;
 }
 .userblurb {
-    float: right;
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: bold;
 }

@@ -1,15 +1,19 @@
 (function() {
-    function AddRoomCtrl($scope, User, $uibModalInstance) {
-        $scope.addUser = function(newUser){
-            if (newUser !== undefined){
-                Room.makeUser(newUser);
+    function UserCtrl($scope, $cookies, $uibModalInstance) {
+        $scope.addUser = function(user){
+            if(user !== undefined){
+                $cookies.put('blocChatCurrentUser', user);
                 $uibModalInstance.close();
-            } 
-         } 
+
+            } else {
+                alert("Oops! You don't have a Username yet!");
+            }
+
+        } 
+    } 
         
-}
     
     angular
         .module('blocChat')
-        .controller('UserCtrl', ['$scope', 'User', '$uibModalInstance', UserCtrl]);
+        .controller('UserCtrl', ['$scope', '$cookies', '$uibModalInstance', UserCtrl]);
 })();

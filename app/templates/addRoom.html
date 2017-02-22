@@ -1,15 +1,15 @@
-<main class = "form-box">
+<section class = "form-box">
 <div class = "add-room">
     <h3 class = "chat-title">Add Chat</h3>
-    <form ng-submit="addRoom(newRoom)">
-    <input ng-model="newRoom" placeholder="Create a Chatroom!" type="text">
+    <div class = "delete">
+<button ng-click="nevermind()" class = "nevermind">Nevermind!</button>
+</div>
+    <form ng-submit="addRoom(newRoom)" class = "form">
+    <input ng-model="newRoom" placeholder="Create a Chatroom!" type="text" class = "form-modal">
 
         <p>
             <button class = "submit-room">Submit</button>
         </p>
     </form>
-<div class = "delete">
-<button ng-click="nevermind()" class = "nevermind">Nevermind!</button>
 </div>
-</div>
-</main>
+</section>

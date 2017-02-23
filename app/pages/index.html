@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="/styles/normalize.css">
     <link rel="stylesheet" type="text/css" href="/styles/messages.css">
     <link rel="stylesheet" type="text/css" href="/styles/addRoom.css">
+    <link rel="stylesheet" type="text/css" href="/styles/addUser.css">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 </head>
@@ -22,6 +23,8 @@
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-animate.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-sanitize.js"></script>
         <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.5.0.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-cookies.js"></script>
+    
 
         <!-- firebase -->
         <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
@@ -44,9 +47,11 @@
     <!-- scripts -->
     <script src="/scripts/app.js"></script>
     <script src="/scripts/services/Room.js"></script>
+    <script src="/scripts/services/Message.js"></script>
+    <script src="/scripts/run/Cookies.js"></script>
     <script src="/scripts/controllers/HomeCtrl.js"></script>
     <script src="/scripts/controllers/AddRoomCtrl.js"></script>
-    <script src="/scripts/factories/Message.js"></script>
+    <script src="/scripts/controllers/UserCtrl.js"></script>
 
 </body>
 </html>

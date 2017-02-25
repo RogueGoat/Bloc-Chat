@@ -7,15 +7,15 @@
         <table>
             <p>
             <tr>
-                <th class = "name">{{ message.content }}</th>
-                <th class = "time">{{ room.date }}</th>
+                <th class = "name">{{ messages.content }}</th>
+                <th class = "time">{{ room || date }}</th>
             </tr>
             </p>
         </table>
     </div>
     <div class = "reply-box">
         <input class = "message-box" type = "text box" placeholder = "What do you want to say?"> 
-        <button class = "reply" ng-click = "sendMessage(test)">Reply</button>
+        <button class = "reply" ng-submit = "sendMessage(messages)">Reply</button>
     </div>
 </section>
 <section class = "side-bar">
@@ -28,16 +28,18 @@
         <p>{{ room.name }}</p>
         <p class = "date">{{ room.createdAt | date }}</p>
     </div>
-    <div class = "user-details">
-        <h4 class = "current-user"> {{ currentUser }} </h4>
-    </div>
-    
     
 <!--    <div class = "design">-->
 <!--        working title ; plan to push image to bottom/right of side-bar -->
 <!--    <img src = "/assets/images/bglines.gif" class = "desgin-type" class = "web-design">-->
 <!--    </div>-->
     
+</section>
+<section class = "user-bar">
+    <div class = "user-details">
+        <h3 class = "current-user"> {{ currentUser }} </h3>
+        <button class = "sign-off">Sign Off</button>
+    </div>
 </section>
 </body>
 

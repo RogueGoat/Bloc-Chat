@@ -1,0 +1,31 @@
+.user-bar {
+    border-radius: 4px;
+    min-width: 100vh;
+    height: 200px;
+    background-color: lightpink;
+    position: fixed;
+    z-index: 00; 
+    bottom: 0; 
+    right: 0;
+    width: 74.7%;
+}
+.user-details {
+
+}
+.current-user {
+    color: lightyellow;
+    float: left;
+    text-shadow: -1px 0 darkgreen, 0 1px darkgreen, 1px 0 lightpink, 0 -1px lightpink;
+}
+.sign-off {
+    float: right;
+    font-family: 'Josefin sans', sans-serif;
+    margin-top: 140px;
+    margin-right: 20px;
+}
+.sign-off:hover {
+    background-color: lightgreen;
+}
+.sign-off:active {
+    background-color: lightgreen;
+}

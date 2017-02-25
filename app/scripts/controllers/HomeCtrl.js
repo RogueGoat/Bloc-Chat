@@ -17,6 +17,12 @@
                 controller: 'AddRoomCtrl'
             })
         };
+        
+        $scope.sendMessage = function(message){
+            //sending message function
+            Message.send($scope.newMessage, message.$id);
+            $scope.newMessage = null;
+        }
     }
     
     angular

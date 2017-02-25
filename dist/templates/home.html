@@ -2,7 +2,7 @@
 <section class = "rooms">
     <div class = "current-room"><h2 class = "rooms-title">{{ currentRoom.name }}</h2>
     </div>
-    <div class = "current-messages"><h3>messages</h3>
+    <div class = "current-user"><h3> {{ currentUser }} </h3>
         <table>
             <p>
             <tr>
@@ -11,6 +11,10 @@
             </tr>
             </p>
         </table>
+    </div>
+    <div class = "current-messages">
+        <input class = "message-box" type = "text box" placeholder = "What do you want to say?"> 
+        <button class = "reply" ng-click = "sendMessage(message)">Reply</button>
     </div>
 </section>
 <section class = "side-bar">

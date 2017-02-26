@@ -1,22 +1,18 @@
 <body>
 <section class = "rooms">
-    <div class = "current-room"><h2 class = "rooms-title">{{ currentRoom.name }}</h2>
+    <div class = "current-room">
+        <h2 class = "rooms-title">{{ currentRoom.name }}</h2>
     </div>
-    <div class = "current-messages">
+    <div class = "current-messages" ng-repeat = "messages in currentRoom track by $index">
 <!--        need ng-repeat here-->
-        <table>
-            <p>
-            <tr>
-                <th class = "name">{{ messages.content }}</th>
-                <th class = "time">{{ room || date }}</th>
-            </tr>
-            </p>
-        </table>
+       
     </div>
+<!--
     <div class = "reply-box">
         <input class = "message-box" type = "text box" placeholder = "What do you want to say?"> 
         <button class = "reply" ng-submit = "sendMessage(messages)">Reply</button>
     </div>
+-->
 </section>
 <section class = "side-bar">
     <div class = "title-button">
@@ -36,9 +32,15 @@
     
 </section>
 <section class = "user-bar">
-    <div class = "user-details">
-        <h3 class = "current-user"> {{ currentUser }} </h3>
-        <button class = "sign-off">Sign Off</button>
+    <div class = "user">
+        <h3 class = "user-details"> Welcome back</h3><h3 class = "current-user"> {{ currentUser }} !</h3>
+        <p class = "reply-box">
+            <input class = "message-box" type = "text box" placeholder = "What do you want to say?"> 
+            <button class = "reply" ng-submit = "sendMessage(messages)">Reply</button>
+        </p>
+    </div>
+    <div>
+        <button class = "sign-off" ng-click = "signOff()">Sign Off</button>
     </div>
 </section>
 </body>

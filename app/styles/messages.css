@@ -31,37 +31,15 @@ body {
 
 .rooms {
     position: relative;
-    float: left;
     font-family: 'Josefin Sans', sans-serif;
 }
 .current-room {
-     margin-top: 40px;
-     margin-left: 470px;
-}
-
-.reply-box {
-     margin-left: 600px;
-     margin-top: 650px;
-
-}
-.message-box {
-    width: 700px;
-    height: 50px;
-    text-align: top;
-    border-radius: 2px;
-    box-shadow: -1px 0 lightgreen, 0 1px lightgreen, 1px 0 lightpink, 0 -1px lightpink;
-}
-.reply {
-    font-family: 'Josefin Sans', sans-serif;
-    
-}
-
-.current-user {
-    margin-top: 150px;
-    margin-left: 470px;
-    font-family: 'Josefin Sans', sans-serif;
+    float: right;
+    position: relative;
 }
 .rooms-title {
+    margin-right: 100px;
+    margin-top: 100px;
     font-family: 'Pacifico', sans-serif;
     color: lightpink;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 lightpink, 0 -1px lightpink;

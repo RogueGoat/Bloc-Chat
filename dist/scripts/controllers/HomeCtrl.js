@@ -37,6 +37,12 @@
            // new message is set to nothing initially
             $scope.newMessage = null;
         }
+        // scope function to sign out of application
+        
+        $scope.signOff = function(){
+              $cookies.remove('blocChatCurrentUser');
+              window.location.reload();  
+            };
     }
     // this file is a controller
     angular

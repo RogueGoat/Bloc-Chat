@@ -1,0 +1,64 @@
+.user-bar {
+    border-radius: 4px;
+    min-width: 100vh;
+    height: 200px;
+    background-color: lightpink;
+    position: fixed;
+    z-index: 00; 
+    bottom: 0; 
+    right: 0;
+    width: 78%;
+}
+.user{
+    color: lightyellow;
+    float: left;
+    margin-left: 50px;
+    margin-top: 25ps;
+}
+.user-details {
+    font-family: 'Josefin sans', sans-serif;
+    font-size: 16px;
+
+}
+.current-user {
+    font-family: 'Pacifico', sans-serif;
+    color: darkgreen;
+    font-size: 3em;
+    text-shadow: -1px 0 lightgreen, 0 1px lightgreen, 1px 0 lightpink, 0 -1px lightpink;
+}
+.reply-box {
+    float: right;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.message-box {
+    width: 700px;
+    height: 50px;
+    text-align: top;
+    border-radius: 2px;
+    box-shadow: -1px 0 lightgreen, 0 1px lightgreen, 1px 0 lightpink, 0 -1px lightpink;
+}
+.reply {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: lightgreen;
+    
+}
+.reply:hover {
+    background-color: white;
+}
+.reply:active {
+    background-color: lightgreen;
+}
+.sign-off {
+    float: right;
+    position: relative;
+    font-family: 'Josefin sans', sans-serif;
+    margin-top: 140px;
+    margin-right: 20px;
+}
+.sign-off:hover {
+    background-color: lightgreen;
+}
+.sign-off:active {
+    background-color: lightgreen;
+}

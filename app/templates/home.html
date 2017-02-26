@@ -3,16 +3,10 @@
     <div class = "current-room">
         <h2 class = "rooms-title">{{ currentRoom.name }}</h2>
     </div>
-    <div class = "current-messages" ng-repeat = "messages in currentRoom track by $index">
-<!--        need ng-repeat here-->
+    <div class = "current-messages" ng-repeat = "messages in currentRoom">
+{{ messages.username }} : {{ messages.content }} -- {{ messages.timeSent | date }}
        
     </div>
-<!--
-    <div class = "reply-box">
-        <input class = "message-box" type = "text box" placeholder = "What do you want to say?"> 
-        <button class = "reply" ng-submit = "sendMessage(messages)">Reply</button>
-    </div>
--->
 </section>
 <section class = "side-bar">
     <div class = "title-button">
@@ -34,10 +28,10 @@
 <section class = "user-bar">
     <div class = "user">
         <h3 class = "user-details"> Welcome back</h3><h3 class = "current-user"> {{ currentUser }} !</h3>
-        <p class = "reply-box">
-            <input class = "message-box" type = "text box" placeholder = "What do you want to say?"> 
-            <button class = "reply" ng-submit = "sendMessage(messages)">Reply</button>
-        </p>
+        <form class = "reply-box"  ng-submit = "sendMessage(newMessage)">
+            <input class = "message-box" type = "text box" ng-model = "newMessage" placeholder = "What do you want to say?"> 
+            <button class = "reply" >Reply</button>
+        </form>
     </div>
     <div>
         <button class = "sign-off" ng-click = "signOff()">Sign Off</button>

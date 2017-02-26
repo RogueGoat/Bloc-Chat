@@ -7,7 +7,7 @@
      // This variable holds the $firebaseArray database service and references what's in it
      var messages = $firebaseArray(ref);
      
-        //this should return messages
+        //this should return messages by referencing the database and finding individual rooms based on their roomId
      return {
          getByRoomId: function (roomId) {
          $firebaseArray(ref.orderByChild("roomId").equalTo(roomId));
@@ -17,9 +17,10 @@
              messages.$add ({
                username: $cookies.get('blocChatCurrentUser'),
                roomId: currentRoomId,
-               content: newMessage
+               content: newMessage,
+               timeSent: Date.now()
              });
-      }
+          }
     };
   }
     //this file is a factory

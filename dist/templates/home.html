@@ -3,11 +3,7 @@
     <div class = "current-room">
         <h2 class = "rooms-title">{{ currentRoom.name }}</h2>
     </div>
-    <div class = "current-messages" ng-repeat = "messages in currentRoom">
-{{ messages.username }} : {{ messages.content }} -- {{ messages.timeSent | date }}
-       
-    </div>
-</section>
+    </section>
 <section class = "side-bar">
     <div class = "title-button">
         <button ng-click="addChatRoom()" class= "add">Add Chatter!</button>
@@ -23,6 +19,14 @@
 <!--        working title ; plan to push image to bottom/right of side-bar -->
 <!--    <img src = "/assets/images/bglines.gif" class = "desgin-type" class = "web-design">-->
 <!--    </div>-->
+    
+</section>
+        <section class = "messages">
+    <div class = "current-messages" ng-repeat = "message in messages">
+        <p class = "message-list">
+            {{ message.username }} : {{ message.content }} -- {{ message.timeSent | date }}
+        </p>
+    </div>
     
 </section>
 <section class = "user-bar">

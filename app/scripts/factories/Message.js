@@ -10,7 +10,7 @@
         //this should return messages by referencing the database and finding individual rooms based on their roomId
      return {
          getByRoomId: function (roomId) {
-         $firebaseArray(ref.orderByChild("roomId").equalTo(roomId));
+         return $firebaseArray(ref.orderByChild("roomId").equalTo(roomId));
       },
          send: function(newMessage, currentRoomId) {
          // This logic should return the information needed for the message

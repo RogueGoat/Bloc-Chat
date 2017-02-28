@@ -16,7 +16,9 @@
             //The scope identifies the current room when a user interacts with a call to this function
             $scope.currentRoom = room;
             // This scope calls on the Message factory and asks the getbyroomid method - this is supposed to connect messages to a specific room
+            debugger
             $scope.messages = Message.getByRoomId(room.$id);
+ 
         };
         
         // scope is a function to add a chat room
@@ -32,7 +34,7 @@
         
         // this scope is a function to send messages
         $scope.sendMessage = function(message){
-            //We ask the Message factory to use the send method, we give parameters of the new message itself and what room that message is in
+            //We ask the Message factory to use the send service we made, we give parameters of the new message itself and what room that message is in
             Message.send($scope.newMessage, $scope.currentRoom.$id);
            // new message is set to nothing initially
             $scope.newMessage = null;

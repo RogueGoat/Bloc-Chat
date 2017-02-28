@@ -32,7 +32,7 @@
         
         // this scope is a function to send messages
         $scope.sendMessage = function(message){
-            //We ask the Message factory to use the send method, we give parameters of the new message itself and what room that message is in
+            //We ask the Message factory to use the send service we made, we give parameters of the new message itself and what room that message is in
             Message.send($scope.newMessage, $scope.currentRoom.$id);
            // new message is set to nothing initially
             $scope.newMessage = null;
